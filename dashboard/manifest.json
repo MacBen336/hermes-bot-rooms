@@ -1,0 +1,13 @@
+{
+  "name": "hermes-bot-rooms",
+  "label": "Bot Rooms",
+  "description": "Desktop group rooms: view the history and append a message through the gateway projection. With ?sender=<member> an agent writes as kind=member instead of as the user.",
+  "icon": "MessagesSquare",
+  "version": "0.2.1",
+  "tab": {
+    "path": "/bot-rooms",
+    "position": "after:sessions"
+  },
+  "entry": "dist/index.js",
+  "api": "plugin_api.py"
+}

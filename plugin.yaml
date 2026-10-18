@@ -1,0 +1,13 @@
+name: hermes-bot-rooms
+version: 0.2.1
+description: >-
+  Bot Mode group rooms in the web dashboard. Reads and writes the group
+  projection that the desktop app mirrors into the gateway metadata
+  (ui_meta["hermes-bots-groups"] in profile.yaml of the default profile). No
+  room storage of its own. POST /send writes as the user (kind=user, name=You)
+  when "sender" is omitted and as a member (kind=member) when "sender=<member>"
+  is given; the name must match a member of that room. Surface: dashboard tab,
+  backend routes under /api/plugins/hermes-bot-rooms/.
+author: hermes-plugin-contributors
+license: MIT
+kind: backend
